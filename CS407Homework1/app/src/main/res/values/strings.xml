@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- Application -->
+    <string name="app_name">Math Quiz</string>
+
+    <!-- Hints and Buttons -->
+    <string name="how_good_are_you">How good are you at math?</string>
+    <string name="start_quiz">Start Quiz</string>
+    <string name="next">Next</string>
+    <string name="finish">Finish</string>
+    <string name="previous">Previous</string>
+    <string name="hint">Enter your answer...</string>
+
+    <!-- Question -->
+    <string name="question1">
+        As shown on the right, ABCD is a rectangle, with AB = 2 and BC = 1.
+        O is the midpoint of AB. Point P is moving on the BC, CD and DA.
+        Let the angle BOP be x. Let the sum of PA and PB be f(x), which is a function of x.
+        Then the figure of y = f(x) is approximately:
+    </string>
+
+    <string name="question2">
+        Suppose x and y has following constrains: \n
+        x - y  + 1 >= 0 \n
+        x - 2y &lt; = 0 \n
+        x + 2y - 2 &lt; = 0 \n
+        Then the maximum of z = x + y is:
+    </string>
+
+</resources>

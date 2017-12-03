@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gu.zhichenghw1.Question1Fragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/questionPart">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/questionFigure"
+            style="@style/QuestionTextStyle"
+            android:text="@string/question1"
+            android:id="@+id/textView"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/question1_figure1"
+            android:layout_alignParentRight="true"
+            android:id="@+id/questionFigure"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/questionPart"
+        android:layout_above="@+id/buttonPart"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/question1_a1"
+                style="@style/AnswerFigureStyle"
+                android:id="@+id/answer1"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/question1_a2"
+                style="@style/AnswerFigureStyle"
+                android:id="@+id/answer2"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/question1_a3"
+                style="@style/AnswerFigureStyle"
+                android:id="@+id/answer3"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/question1_a4"
+                style="@style/AnswerFigureStyle"
+                android:id="@+id/answer4"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:id="@+id/buttonPart">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:text="@string/previous"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:id="@+id/previousButton"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:text="@string/next"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:id="@+id/nextButton"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
